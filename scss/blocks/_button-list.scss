@@ -1,0 +1,16 @@
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  @include media-query('md') {
+    // justify-content: space-between;
+  }
+}
+
+
+
+.button-list > * {
+}
