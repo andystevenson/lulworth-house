@@ -5,8 +5,8 @@
   "main": "index.html",
   "homepage": "https://andystevenson.github.io/lulworth-house",
   "scripts": {
-    "dev": "parcel index.html --open ",
-    "build": "parcel build index.html --public-url /lulworth-house/",
+    "dev": "parcel index.html --open --public-url ./",
+    "build": "parcel build index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
