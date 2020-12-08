@@ -19,7 +19,7 @@
         <header>
           <nav>
             <ul>
-              <li><a href="index.html" >Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="/house.html" data-state="active">House</a></li>
               <li><a href="/lulworth.html">Lulworth</a></li>
               <li><a href="/contact.html">Contact</a></li>
@@ -35,7 +35,31 @@
               <p class="summary color-dark-glare">Set in beautiful Lulworth village within a stones throw of the
                 Jurassic Coast.</p>
             </div>
-            <div class="image"><img src="images/1-house.jpg" alt="Our West Lulworth House"></div>
+            <ul class="carousel">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide">
+                <label for="img-2">
+                  <img src="images/1-house.jpg" alt="Our West Lulworth House">
+                </label>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide">
+                <label for="img-3">
+                  <img src="//unsplash.it/1500">
+                </label>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide">
+                <label for="img-1">
+                  <img src="//unsplash.it/2000">
+                </label>
+              </li>
+              <div class="dots">
+                <label for="img-1" class="dot" id="dot-1"></label>
+                <label for="img-2" class="dot" id="dot-2"></label>
+                <label for="img-3" class="dot" id="dot-3"></label>
+              </div>
+            </ul>
           </article>
           <article class="gap-top-600">
             <div class="description">

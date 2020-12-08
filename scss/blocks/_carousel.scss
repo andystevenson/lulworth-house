@@ -1,0 +1,65 @@
+ul.carousel {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  & input {
+    display: none;
+  }
+
+  & .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+  }
+
+  & .slide label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    text-align: center;
+  }
+
+  & .dot {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  & input:checked + li.slide {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+  }
+
+  @for $i from 1 through 100 {
+    & input#img-#{$i}:checked ~ .dots label#dot-#{$i} {
+      opacity: 1;
+    }
+  }
+}
