@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:wght@400;900"
@@ -39,6 +44,7 @@
                 is also part of the Jurassic Coast World Heritage Site.</p>
             </div>
             <!-- <div class="image"><img src="images/v001-lulworth-village.jpg" alt="Our West Lulworth House"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-1" />
             <ul class="carousel">
               <input type="radio" name="radio-buttons" id="img-1" checked />
               <li class="slide">
@@ -70,12 +76,13 @@
                   <img src="images/lulworth/village/5.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-1" class="dot" id="dot-1"></label>
                 <label for="img-2" class="dot" id="dot-2"></label>
                 <label for="img-3" class="dot" id="dot-3"></label>
                 <label for="img-4" class="dot" id="dot-4"></label>
                 <label for="img-5" class="dot" id="dot-5"></label>
+                <label for="fullscreen-1" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-1"></label>
               </div>
             </ul>
 
@@ -87,6 +94,7 @@
                 in the style of a revival fortified castle. The parks and surrounding grounds are stunning.</p>
             </div>
             <!-- <div class="image"><img src="images/v002-lulworth-castle.jpg" alt="The garden views"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-2" />
             <ul class="carousel">
               <input type="radio" name="r2" id="img-6" checked />
               <li class="slide">
@@ -106,10 +114,11 @@
                   <img src="images/lulworth/castle/3.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-6" class="dot" id="dot-6"></label>
                 <label for="img-7" class="dot" id="dot-7"></label>
                 <label for="img-8" class="dot" id="dot-8"></label>
+                <label for="fullscreen-2" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-2"></label>
               </div>
             </ul>
           </article>
@@ -118,6 +127,8 @@
               <h2 class="title headline" data-highlight="tertiary">Pubs & Cafés</h2>
               <p class="summary color-dark-glare">Lulworth is blessed with excellent gastro pubs & cafés.</p>
             </div>
+
+            <input type="checkbox" name="carousels" id="fullscreen-3" />
             <ul class="carousel">
               <input type="radio" name="r3" id="img-9" checked />
               <li class="slide">
@@ -137,10 +148,11 @@
                   <img src="images/lulworth/pubs/3.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-9" class="dot" id="dot-9"></label>
                 <label for="img-10" class="dot" id="dot-10"></label>
                 <label for="img-11" class="dot" id="dot-11"></label>
+                <label for="fullscreen-3" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-3"></label>
               </div>
             </ul>
           </article>
@@ -150,6 +162,7 @@
               <p class="summary color-dark-glare">Lulworth is blessed with some of the finest beaches in England.</p>
             </div>
             <!-- <div class="image"><img src="images/v004-lulworth-cove-inn.jpg" alt="The place where we eat."></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-4" />
             <ul class="carousel">
               <input type="radio" name="r4" id="img-12" checked />
               <li class="slide">
@@ -175,11 +188,12 @@
                   <img src="images/lulworth/beach/4.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-12" class="dot" id="dot-12"></label>
                 <label for="img-13" class="dot" id="dot-13"></label>
                 <label for="img-14" class="dot" id="dot-14"></label>
                 <label for="img-15" class="dot" id="dot-15"></label>
+                <label for="fullscreen-4" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-4"></label>
               </div>
             </ul>
           </article>
@@ -190,6 +204,7 @@
                 highlight of the Jurassic Coast.</p>
             </div>
             <!-- <div class="image"><img src="images/v009-lulworth-beach.jpg" alt="A comfortable family bedroom."></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-5" />
             <ul class="carousel">
               <input type="radio" name="r5" id="img-16" checked />
               <li class="slide">
@@ -221,12 +236,13 @@
                   <img src="images/lulworth/cove/5.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-16" class="dot" id="dot-16"></label>
                 <label for="img-17" class="dot" id="dot-17"></label>
                 <label for="img-18" class="dot" id="dot-18"></label>
                 <label for="img-19" class="dot" id="dot-19"></label>
                 <label for="img-20" class="dot" id="dot-20"></label>
+                <label for="fullscreen-5" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-5"></label>
               </div>
             </ul>
           </article>
@@ -269,7 +285,6 @@
           </ul>
 
           <p><a href="mailto:andystevenson@mac.com?subject=Lulworth House">&copy Robbo 2020 - Contact Us</a></p>
-
         </footer>
       </div>
     </main>

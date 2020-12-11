@@ -117,6 +117,8 @@ h4 {
 @import 'utilities/headline';
 @import 'utilities/auto-grid';
 @import 'utilities/split';
+@import 'utilities/fa-icon';
+@import 'utilities/tooltip';
 
 // page styles
 .main-page header {
@@ -173,11 +175,6 @@ article {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 250ms ease-in-out;
-  }
-
-  & img:hover {
-    transform: scale(0.95);
   }
 
   @include media-query('lg') {

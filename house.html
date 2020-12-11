@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=Red+Hat+Display:wght@400;900"
@@ -35,6 +40,7 @@
               <p class="summary color-dark-glare">Set in beautiful Lulworth village within a stones throw of the
                 Jurassic Coast.</p>
             </div>
+            <input type="checkbox" name="carousels" id="fullscreen-1" />
             <ul class="carousel">
               <input type="radio" name="r0" id="img-1" checked />
               <li class="slide">
@@ -54,10 +60,11 @@
                   <img src="/images/house/house/3.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-1" class="dot" id="dot-1"></label>
                 <label for="img-2" class="dot" id="dot-2"></label>
                 <label for="img-3" class="dot" id="dot-3"></label>
+                <label for="fullscreen-1" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-1"></label>
               </div>
             </ul>
           </article>
@@ -67,6 +74,7 @@
               <p class="summary color-dark-glare">Ideally situated with great views of the coast. Perfect on summer
                 evenings.</p>
             </div>
+            <input type="checkbox" name="carousels" id="fullscreen-2" />
             <ul class="carousel">
               <input type="radio" name="r1" id="img-4" checked />
               <li class="slide">
@@ -86,10 +94,11 @@
                   <img src="/images/house/garden/3.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-4" class="dot" id="dot-4"></label>
                 <label for="img-5" class="dot" id="dot-5"></label>
                 <label for="img-6" class="dot" id="dot-6"></label>
+                <label for="fullscreen-2" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-2"></label>
               </div>
 
             </ul>
@@ -100,6 +109,7 @@
               <p class="summary color-dark-glare">Easy access onto Queer Street!</p>
             </div>
             <!-- <div class="image"><img src="images/3-entrance-hallway.jpg" alt="A perspective view on the hallway"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-3" />
             <ul class="carousel">
               <input type="radio" name="r2" id="img-7" checked />
               <li class="slide">
@@ -113,9 +123,11 @@
                   <img src="images/house/hallway/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-7" class="dot" id="dot-7"></label>
                 <label for="img-8" class="dot" id="dot-8"></label>
+                <label for="fullscreen-3" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-3"></label>
+
               </div>
             </ul>
           </article>
@@ -125,6 +137,7 @@
               <p class="summary color-dark-glare">Spacious airy room to enjoy meals with the family.</p>
             </div>
             <!-- <div class="image"><img src="images/4-dining-room.jpg" alt="The place where we eat."></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-4" />
             <ul class="carousel">
               <input type="radio" name="r3" id="img-9" checked />
               <li class="slide">
@@ -138,9 +151,10 @@
                   <img src="images/house/dining-room/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-9" class="dot" id="dot-9"></label>
                 <label for="img-10" class="dot" id="dot-10"></label>
+                <label for="fullscreen-4" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-4"></label>
               </div>
             </ul>
           </article>
@@ -150,6 +164,7 @@
               <p class="summary color-dark-glare">Chill out and relax, enjoy the views, watch the telly!</p>
             </div>
             <!-- <div class="image"><img src="images/5-living-room.jpg" alt="The chilling out space"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-5" />
             <ul class="carousel">
               <input type="radio" name="r4" id="img-11" checked />
               <li class="slide">
@@ -163,9 +178,10 @@
                   <img src="images/house/living-room/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-11" class="dot" id="dot-11"></label>
                 <label for="img-12" class="dot" id="dot-12"></label>
+                <label for="fullscreen-5" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-5"></label>
               </div>
             </ul>
           </article>
@@ -176,6 +192,7 @@
                 balcony.</p>
             </div>
             <!-- <div class="image"><img src="images/6-living-room-balcony.jpg" alt="Hillside views from the balcony"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-6" />
             <ul class="carousel">
               <input type="radio" name="r5" id="img-13" checked />
               <li class="slide">
@@ -189,9 +206,10 @@
                   <img src="images/house/balcony/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-13" class="dot" id="dot-13"></label>
                 <label for="img-14" class="dot" id="dot-14"></label>
+                <label for="fullscreen-6" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-6"></label>
               </div>
             </ul>
           </article>
@@ -202,6 +220,7 @@
                 couples have slept in it before you!</p>
             </div>
             <!-- <div class="image"><img src="images/8-main-bedroom.jpg" alt="Where whoever running the house sleeps!"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-7" />
             <ul class="carousel">
               <input type="radio" name="r6" id="img-15" checked />
               <li class="slide">
@@ -215,9 +234,11 @@
                   <img src="images/house/master-bedroom/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-15" class="dot" id="dot-15"></label>
                 <label for="img-16" class="dot" id="dot-16"></label>
+                <label for="fullscreen-7" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-7"></label>
+
               </div>
             </ul>
           </article>
@@ -227,6 +248,7 @@
               <p class="summary color-dark-glare">Comfortable family bedroom for friends or the kids.</p>
             </div>
             <!-- <div class="image"><img src="images/9-upstairs-bedroom.jpg" alt="A comfortable family bedroom."></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-8" />
             <ul class="carousel">
               <input type="radio" name="r7" id="img-17" checked />
               <li class="slide">
@@ -246,10 +268,12 @@
                   <img src="images/house/family-bedroom/3.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-17" class="dot" id="dot-17"></label>
                 <label for="img-18" class="dot" id="dot-18"></label>
                 <label for="img-19" class="dot" id="dot-19"></label>
+                <label for="fullscreen-8" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-8"></label>
+
               </div>
             </ul>
           </article>
@@ -260,6 +284,7 @@
                 you're too pissed to make it upstairs!</p>
             </div>
             <!-- <div class="image"><img src="images/12-downstairs-bedroom.jpg" alt="A crashpad bedsite!"></div> -->
+            <input type="checkbox" name="carousels" id="fullscreen-9" />
             <ul class="carousel">
               <input type="radio" name="r8" id="img-20" checked />
               <li class="slide">
@@ -273,9 +298,11 @@
                   <img src="images/house/downstairs-bedroom/2.jpg">
                 </label>
               </li>
-              <div class="dots">
+              <div class="controls">
                 <label for="img-20" class="dot" id="dot-20"></label>
                 <label for="img-21" class="dot" id="dot-21"></label>
+                <label for="fullscreen-9" class="fullscreen fa-icon" data-tooltip="fullscreen" id="full-9"></label>
+
               </div>
             </ul>
           </article>
@@ -284,8 +311,6 @@
       </div>
       <div class="wrapper">
         <footer class="gap-top-600">
-
-
           <ul>
             <li>
               <a href="https://www.visit-dorset.com/"
