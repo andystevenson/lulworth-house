@@ -122,6 +122,7 @@ h4 {
 
 // page styles
 .main-page header {
+  --nav-right: 1em;
   height: 100vh !important;
   background-image: url(../images/bg.jpg);
   background-position: center;
@@ -136,6 +137,7 @@ h4 {
 }
 
 main[class$='-page'] header {
+  position: relative;
   height: 4vh;
 }
 

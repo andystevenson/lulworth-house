@@ -1,7 +1,6 @@
 nav {
   position: absolute;
-  top: 0;
-  right: var(--site-gutter, 3rem);
+  right: var(--nav-right, 0);
   line-height: 1;
   font-weight: 900;
   margin-top: #{get-size('200')};
@@ -12,14 +11,11 @@ nav {
     display: flex;
     flex-wrap: wrap;
 
-    > * {
-      padding-top: get-size('100');
-      padding-inline-start: get-size('100');
-      @include media-query('sm') {
-        padding-inline-start: get-size('200');
-      }
+    > * + * {
+      padding-left: 0.5em;
+
       @include media-query('md') {
-        padding-inline-start: get-size('300');
+        padding-left: 1em;
       }
     }
   }
